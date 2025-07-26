@@ -1,0 +1,11 @@
+{
+  "project_name": "fullstack_project",
+  "project_type": "Fullstack",
+  "frontend_framework": "React",
+  "backend_framework": "FastAPI",
+  "database": "PostgreSQL",
+  "recommended_stack": "React + FastAPI + PostgreSQL",
+  "generated_path": "/Users/faruk/ai-fullstack-advisor/fullstack_project",
+  "timestamp": "2025-07-26 13:22:12",
+  "advisor_version": "1.0"
+}

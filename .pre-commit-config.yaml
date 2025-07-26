@@ -1,0 +1,11 @@
+# .pre-commit-config.yaml
+repos:
+  - repo: local
+    hooks:
+      - id: update-structure-doc
+        name: Update Project Structure Documentation
+        entry: python utils/generate_structure_doc.py
+        language: system
+        files: '\.(py|json)$' # Ejecuta el hook si cambian archivos Python o JSON
+        pass_filenames: false # No pasar nombres de archivos, el script lo manejará todo
+        always_run: true # Siempre ejecuta este hook antes del commit

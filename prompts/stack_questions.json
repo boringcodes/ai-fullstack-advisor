@@ -1,0 +1,46 @@
+[
+  {
+    "name": "project_type",
+    "type": "list",
+    "message": "¿Qué tipo de proyecto vas a iniciar?",
+    "choices": [
+      { "name": "Frontend", "value": "frontend" },
+      { "name": "Backend", "value": "backend" },
+      { "name": "Fullstack", "value": "fullstack" }
+    ]
+  },
+  {
+    "name": "frontend_framework",
+    "type": "list",
+    "message": "¿Qué framework frontend prefieres?",
+    "choices": [
+      { "name": "React", "value": "react" },
+      { "name": "Vue.js", "value": "vue" },
+      { "name": "Angular", "value": "angular" }
+    ],
+    "when": { "project_type": ["frontend", "fullstack"] }
+  },
+  {
+    "name": "backend_framework",
+    "type": "list",
+    "message": "¿Qué framework backend prefieres?",
+    "choices": [
+      { "name": "FastAPI (Python)", "value": "fastapi" },
+      { "name": "Django (Python)", "value": "django" },
+      { "name": "Node.js (Express)", "value": "express" }
+    ],
+    "when": { "project_type": ["backend", "fullstack"] }
+  },
+  {
+    "name": "database",
+    "type": "list",
+    "message": "¿Qué base de datos vas a usar?",
+    "choices": [
+      { "name": "PostgreSQL", "value": "postgresql" },
+      { "name": "MongoDB", "value": "mongodb" },
+      { "name": "SQLite (para proyectos pequeños)", "value": "sqlite" },
+      { "name": "MySQL", "value": "mysql" }
+    ],
+    "when": { "project_type": ["backend", "fullstack"] }
+  }
+]

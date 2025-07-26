@@ -1,33 +1,33 @@
+# Esquema Visual de la Estructura del Sistema AI Fullstack Advisor™
+
+> **Nota:** Este archivo se genera automáticamente. No editar manualmente.
+
+```plaintext
 ai-fullstack-advisor/
-│
-├── fullstack_advisor.py            # Módulo principal CLI (flujo general)
-├── requirements.txt                # Librerías mínimas del sistema
-├── setup_structure.py              # Script para generar estructura base
-├── README.md                       # Documentación general
-│
-├── logic/                          # Lógica modular y backend inteligente
-│   ├── recommender.py              # Sugerencias según respuestas
-│   ├── installer.py                # Instalación automática de dependencias
-│   └── structure_generator.py      # Generador de estructura del proyecto
-│
-├── prompts/                        # Preguntas y lógica de flujo
-│   └── stack_questions.json        # Preguntas clave con opciones
-│
-├── utils/                          # Funciones utilitarias
-│   ├── checker.py                  # Verifica herramientas locales (npm, pip...)
-│   └── logger.py                   # Logging del sistema
-│
-├── outputs/                        # Salida generada automáticamente
-│   └── config_summary.json         # Resultados personalizados
-│
-├── .gitignore                      # Archivos a ignorar por Git
-├── .github/
-│   ├── project-template.md         # Plantilla Scrum-DevOps para gestión de proyecto
-│   └── workflows/
-│       ├── validate_config.yml     # Workflow CI: Validación de configuración del proyecto
-│       └── ci.yml                  # Pruebas, lint, instalación automática
-│
-└── docs/                           # Documentación extendida
-|    ├── project-board.md           # Board Scrum inicial (visión general)
-|    ├── roadmap.md                 # Roadmap del proyecto
-|    └── structure.graphql          # Esquema GraphQL para la estructura del proyecto    
+├── .github/		# Configuración de GitHub (workflows, plantillas)
+│   ├── workflows/
+│   │   └── validate_config.yml
+│   └── project-template.md
+├── docs/		# Documentación extendida
+│   └── project-board.md
+│   └── roadmap.md
+│   └── structure.graphql
+├── logic/		# Lógica principal y backend inteligente
+│   └── installer.py		# Instalación automática de dependencias
+│   └── recommender.py		# Motor de recomendaciones según respuestas
+│   └── structure_generator.py		# Generador de carpetas y archivos del proyecto
+└── outputs/		# Archivos generados automáticamente
+├── prompts/		# Preguntas y lógica del sistema
+│   └── stack_questions.json		# Base de preguntas clave con opciones
+│   └── stack_questions.py		# Lógica para lanzar preguntas en CLI
+├── utils/		# Utilidades auxiliares
+│   └── checker.py		# Verifica herramientas locales (npm, pip, etc.)
+│   └── generate_structure_doc.py		# Script para actualizar dinámicamente docs/structure.graphql
+│   └── logger.py		# Logging del proceso y resumen generado
+└── .gitignore		# Archivos a ignorar por Git
+└── .pre-commit-config.yaml		# Configuración para automatizar tareas antes de cada commit
+└── README.md		# Documentación general del proyecto
+└── fullstack_advisor.py		# Módulo principal CLI (flujo general de ejecución)
+└── requirements.txt		# Lista de dependencias del sistema
+└── setup_structure.py		# Script que genera la estructura base inicial
+```
