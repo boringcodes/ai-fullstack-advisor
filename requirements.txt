@@ -1,0 +1,1 @@
+# Por ahora, ninguna librería externa necesaria (todo es stdlib)

@@ -12,7 +12,8 @@ ai-fullstack-advisor/
 │
 ├── prompts/                        # Preguntas y lógica de flujo
 │   └── stack_questions.json        # Preguntas clave con opciones
-│
+|   └── stack_questions.py         # Lógica de preguntas y respuestas
+|
 ├── utils/                          # Funciones utilitarias
 │   ├── checker.py                  # Verifica herramientas locales (npm, pip...)
 │   └── logger.py                   # Logging del sistema
@@ -24,8 +25,7 @@ ai-fullstack-advisor/
 ├── .github/
 │   ├── project-template.md         # Plantilla Scrum-DevOps para gestión de proyecto
 │   └── workflows/
-│       ├── validate_config.yml     # Workflow CI: Validación de configuración del proyecto
-│       └── ci.yml                  # Pruebas, lint, instalación automática
+│       └── validate_config.yml     # Workflow CI: Validación de configuración del proyecto
 │
 └── docs/                           # Documentación extendida
 |    ├── project-board.md           # Board Scrum inicial (visión general)

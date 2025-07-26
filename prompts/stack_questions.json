@@ -1,0 +1,30 @@
+{
+  "questions": [
+    {
+      "id": "project_type",
+      "question": "¿Qué tipo de proyecto vas a desarrollar?",
+      "options": ["Backend", "Frontend", "Fullstack"]
+    },
+    {
+      "id": "backend_subtype",
+      "question": "¿Qué tipo de backend quieres?",
+      "options": ["API REST", "Microservicios", "Automatización / Scripts"]
+    },
+    {
+      "id": "frontend_subtype",
+      "question": "¿Qué tipo de frontend prefieres?",
+      "options": ["SPA (React/Vue)", "Landing Page", "PWA"]
+    },
+    {
+      "id": "fullstack_subtype",
+      "question": "¿Qué estilo de fullstack buscas?",
+      "options": ["API + SPA", "SSR (Next.js, Nuxt)", "Microservicios + Frontend"]
+    },
+    {
+      "id": "experience_level",
+      "question": "¿Cuál es tu nivel como desarrollador?",
+      "options": ["Principiante", "Intermedio", "Avanzado"]
+    }
+    
+  ]
+}
