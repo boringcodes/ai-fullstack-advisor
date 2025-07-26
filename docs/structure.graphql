@@ -9,6 +9,7 @@ ai-fullstack-advisor/
 │   │   └── validate_config.yml
 │   └── project-template.md
 ├── docs/		# Documentación extendida
+│   └── README_V1.md
 │   └── project-board.md
 │   └── roadmap.md
 │   └── structure.graphql
