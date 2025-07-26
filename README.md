@@ -138,15 +138,10 @@ ai-fullstack-advisor/
     ├── project-board.md            # Scrum board: backlog, tareas, sprints
     ├── roadmap.md                  # Roadmap a futuro (v2, v3, plugins)
     └── structure.graphql           # Esquema visual en formato GraphQL del sistema
-<<<<<<< HEAD
-=======
-
->>>>>>> 386c08e7392360a7fad41d9ed71668350cf41424
 ```
 
 ---
 
-<<<<<<< HEAD
 ## 🛠️ Actualización Automática de la Estructura
 
 La documentación de la estructura del proyecto (`docs/structure.graphql`) se mantiene siempre al día. Gracias a **pre-commit**, este archivo se **actualiza automáticamente** cada vez que realizas un `git commit`.
@@ -155,8 +150,6 @@ La documentación de la estructura del proyecto (`docs/structure.graphql`) se ma
 
 ---
 
-=======
->>>>>>> 386c08e7392360a7fad41d9ed71668350cf41424
 ## 🧩 Modularidad
 
 Cada archivo está desacoplado. Puedes extender funcionalidades fácilmente:
