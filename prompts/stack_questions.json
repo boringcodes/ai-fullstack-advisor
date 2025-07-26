@@ -1,46 +1,57 @@
 [
   {
+    "type": "list",
     "name": "project_type",
-    "type": "list",
     "message": "¿Qué tipo de proyecto vas a iniciar?",
-    "choices": [
-      { "name": "Frontend", "value": "frontend" },
-      { "name": "Backend", "value": "backend" },
-      { "name": "Fullstack", "value": "fullstack" }
-    ]
+    "choices": ["Frontend", "Backend", "Fullstack"]
   },
   {
+    "type": "list",
     "name": "frontend_framework",
-    "type": "list",
     "message": "¿Qué framework frontend prefieres?",
-    "choices": [
-      { "name": "React", "value": "react" },
-      { "name": "Vue.js", "value": "vue" },
-      { "name": "Angular", "value": "angular" }
-    ],
-    "when": { "project_type": ["frontend", "fullstack"] }
+    "choices": ["React", "Angular", "Vue.js"],
+    "when": {
+      "or": [
+        { "project_type": "Frontend" },
+        { "project_type": "Fullstack" }
+      ]
+    }
   },
   {
+    "type": "list",
     "name": "backend_framework",
-    "type": "list",
     "message": "¿Qué framework backend prefieres?",
-    "choices": [
-      { "name": "FastAPI (Python)", "value": "fastapi" },
-      { "name": "Django (Python)", "value": "django" },
-      { "name": "Node.js (Express)", "value": "express" }
-    ],
-    "when": { "project_type": ["backend", "fullstack"] }
+    "choices": ["Node.js", "Django", "Flask", "Spring Boot"],
+    "when": {
+      "or": [
+        { "project_type": "Backend" },
+        { "project_type": "Fullstack" }
+      ]
+    }
   },
   {
-    "name": "database",
     "type": "list",
-    "message": "¿Qué base de datos vas a usar?",
-    "choices": [
-      { "name": "PostgreSQL", "value": "postgresql" },
-      { "name": "MongoDB", "value": "mongodb" },
-      { "name": "SQLite (para proyectos pequeños)", "value": "sqlite" },
-      { "name": "MySQL", "value": "mysql" }
-    ],
-    "when": { "project_type": ["backend", "fullstack"] }
+    "name": "database",
+    "message": "¿Qué base de datos usarás?",
+    "choices": ["PostgreSQL", "MySQL", "MongoDB", "SQLite"],
+    "when": {
+      "or": [
+        { "project_type": "Backend" },
+        { "project_type": "Fullstack" }
+      ]
+    }
+  },
+  {
+    "type": "confirm",
+    "name": "confirm_generation",
+    "message": "¿Deseas generar la estructura del proyecto ahora?",
+    "default": true
+  },
+  {
+    "type": "input",
+    "name": "project_name",
+    "message": "¿Cuál es el nombre de tu nuevo proyecto?",
+    "default": "my_awesome_project",
+    "when": { "confirm_generation": true }
   }
 ]
