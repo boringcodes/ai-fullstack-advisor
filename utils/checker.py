@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import subprocess
 import shutil
 from utils.logger import log_message
@@ -63,16 +62,3 @@ def check_all_requirements():
     else:
         log_message("Todos los requisitos técnicos principales están cubiertos.", level="INFO")
     return all_present
-=======
-"""
-Funciones para verificar si herramientas están instaladas localmente.
-"""
-
-import shutil
-
-def is_tool_installed(tool_name):
-    """
-    Verifica si una herramienta está disponible en PATH.
-    """
-    return shutil.which(tool_name) is not None
->>>>>>> 386c08e7392360a7fad41d9ed71668350cf41424
