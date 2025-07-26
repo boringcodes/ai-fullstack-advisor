@@ -50,11 +50,14 @@ Muchos desarrolladores pierden tiempo y energía en configurar manualmente sus e
 git clone https://github.com/boringcodes/ai-fullstack-advisor.git
 cd ai-fullstack-advisor
 
+<<<<<<< HEAD
 # Crea y activa el entorno virtual (si no lo tienes)
 python -m venv venv
 source venv/bin/activate # Para Linux/macOS/Git Bash
 # O .\venv\Scripts\activate para CMD/PowerShell
 
+=======
+>>>>>>> 386c08e7392360a7fad41d9ed71668350cf41424
 # Instala dependencias
 pip install -r requirements.txt
 
@@ -111,15 +114,21 @@ ai-fullstack-advisor/
 ├── utils/                          # Utilidades auxiliares
 │   ├── checker.py                  # Verifica herramientas locales (npm, pip, etc.)
 │   └── logger.py                   # Logging del proceso y resumen generado
+<<<<<<< HEAD
 │   └── generate_structure_doc.py   # Script para actualizar dinámicamente docs/structure.graphql
+=======
+>>>>>>> 386c08e7392360a7fad41d9ed71668350cf41424
 │
 ├── outputs/                        # Archivos generados automáticamente
 │   └── config_summary.json         # Resultado personalizado del usuario
 │
 ├── .gitignore                      # Ignora archivos temporales y entornos virtuales
 │
+<<<<<<< HEAD
 ├── .pre-commit-config.yaml         # Configuración para automatizar tareas antes de cada commit
 │
+=======
+>>>>>>> 386c08e7392360a7fad41d9ed71668350cf41424
 ├── .github/
 │   ├── project-template.md         # Plantilla Scrum-DevOps para gestión de proyecto
 │   └── workflows/
@@ -129,10 +138,15 @@ ai-fullstack-advisor/
     ├── project-board.md            # Scrum board: backlog, tareas, sprints
     ├── roadmap.md                  # Roadmap a futuro (v2, v3, plugins)
     └── structure.graphql           # Esquema visual en formato GraphQL del sistema
+<<<<<<< HEAD
+=======
+
+>>>>>>> 386c08e7392360a7fad41d9ed71668350cf41424
 ```
 
 ---
 
+<<<<<<< HEAD
 ## 🛠️ Actualización Automática de la Estructura
 
 La documentación de la estructura del proyecto (`docs/structure.graphql`) se mantiene siempre al día. Gracias a **pre-commit**, este archivo se **actualiza automáticamente** cada vez que realizas un `git commit`.
@@ -141,6 +155,8 @@ La documentación de la estructura del proyecto (`docs/structure.graphql`) se ma
 
 ---
 
+=======
+>>>>>>> 386c08e7392360a7fad41d9ed71668350cf41424
 ## 🧩 Modularidad
 
 Cada archivo está desacoplado. Puedes extender funcionalidades fácilmente:

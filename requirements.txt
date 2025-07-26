@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 colorama==0.4.6
 PyInquirer==1.0.3
 setuptools==69.5.1
 pre-commit==3.7.1
+=======
+# Por ahora, ninguna librería externa necesaria (todo es stdlib)
+>>>>>>> 386c08e7392360a7fad41d9ed71668350cf41424
