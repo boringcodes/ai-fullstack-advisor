@@ -85,7 +85,7 @@ Validación de Entrada Mejorada: Implementar validaciones más robustas y person
 ¡Las contribuciones son bienvenidas! Siéntete libre de abrir issues, enviar pull requests o sugerir nuevas características para hacer crecer este Advisor.
 
 📜 Licencia
-[Aquí puedes especificar tu licencia, por ejemplo, MIT, Apache 2.0, etc. Puedes añadir un enlace a tu archivo LICENSE si lo tienes.]
+Distribuido bajo licencia MIT. Consulta LICENSE para más detalles.
 
-📞 Contacto
-Made with AI, DevOps & Love 💜 by Farükツ
+Made with AI, DevOps & Love 💜
+by @Farükツ
