@@ -22,6 +22,7 @@ ai-fullstack-advisor/
 │   └── stack_questions.py		# Lógica para lanzar preguntas en CLI
 ├── utils/		# Utilidades auxiliares
 │   └── checker.py		# Verifica herramientas locales (npm, pip, etc.)
+│   └── custom_prompter.py
 │   └── generate_structure_doc.py		# Script para actualizar dinámicamente docs/structure.graphql
 │   └── logger.py		# Logging del proceso y resumen generado
 └── .gitignore		# Archivos a ignorar por Git
